@@ -1,4 +1,5 @@
 import React from 'react';
+import './style.css'
 import BotaoRota from '../BotaoRota';
 
 
@@ -9,9 +10,14 @@ function PaginaInicial (){
     <div>
     <h1>Escolha seu caminho em JavaScript</h1>
 
-    
-  <BotaoRota rota1="Front-End" rota2="Back-End" />
-    
+    <div className="conteudo-opcoes">
+
+      <BotaoRota classe="opcao-front-end" endereco="/front-end" nome="Front-End" />
+      <BotaoRota classe="opcao-back-end" endereco="/back-end" nome="Back-End" />
+      
+
+    </div>
+
     
   </div>
   );
